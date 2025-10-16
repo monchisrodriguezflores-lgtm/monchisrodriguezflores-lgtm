@@ -1,0 +1,205 @@
+html, body{
+    font-family: Arial, sans-serif;
+   
+}
+
+.body-inicio {
+   margin: 0;
+    /* Ajusta este padding para que el contenido de la portada no quede oculto */
+    padding-top: 70px; /* Asumiendo que tu header tiene unos 60-70px de altura */
+}
+.portada {
+    /* Propiedades de la imagen de portada */
+    background-image: url('img/FEMENINO.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+    /* Propiedades para centrar los elementos (título y botones) */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+
+    /* Estilos para el texto */
+    color: white;
+    text-align: center;
+}
+.botones-container {
+    display: flex;
+    gap: 100px; /* Separa los botones entre sí */
+    margin-top: 600px; /* Agrega espacio entre el título y los botones */ 
+}
+.boton-mujer,
+.boton-hombre {
+    padding: 30px 200px;
+    font-size: 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Esto es clave: elimina el subrayado del enlace */
+    text-decoration: none;
+    display: inline-block; /* Para que el padding funcione bien */
+}
+
+.boton-mujer {
+    background-color: #ff0080;
+    color: #ffffff;
+}
+
+.boton-hombre {
+    background-color: rgb(65, 121, 217);
+    color: #ffffff;
+}
+
+/* Opcional: para darle un toque más profesional */
+h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para que el texto resalte */
+}
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: #e2a9f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+/* 💡 Nuevo: Este estilo es el que tenía antes tu logo original (grande) */
+.header .logo-barra {
+    font-size: 50px; /* Tamaño grande por defecto para el texto del header */
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* 💡 CLAVE: Estilos específicos del logo solo para la página de inicio */
+.inicio-logo-text {
+    /* Usamos flexbox para alinear la imagen y el texto */
+    display: flex;
+    align-items: center; 
+    /* El tamaño más pequeño que querías */
+    font-size: 50px; 
+    font-weight: bold;
+    color: #333;
+    text-decoration: none; 
+}
+
+.inicio-logo-text img {
+    margin-right: 10px;
+    width: 160px; 
+    height: 90px;
+}
+
+
+.navigation a { /* Esta clase no se usa en tu HTML, pero la dejo por si acaso */
+    margin-left: 10px; 
+    font-size: 16px;
+    color: #555;
+    text-decoration: none; 
+}
+.contenedor-fondo {
+    background-image: url('img/introM.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    position: relative; 
+}
+.contenido-superpuesto {
+    position: absolute;
+    top: 50%; 
+    left: 45%; 
+    transform: translateY(-50%); 
+    color: white;
+    text-align: right; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 50%; 
+    margin-right: auto;
+}
+.contenido-superpuesto h1 {
+    font-size: 3em;
+    font-size: 60px;
+    margin-bottom: 0.5em;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+}
+.contenido-superpuesto h3 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+    font-size: 40px;
+}
+.contenido-superpuesto p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+}
+.boton {
+    display: inline-block;
+    background-color: #ff0080;
+    color: white;
+    padding: 25px 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 46px;
+}
+.boton:hover {
+    background-color: #ff7efd;
+}
+
+.boton-subir {
+    position: absolute; 
+    bottom: 40px; 
+    right: 30px; 
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #f0f0f0; 
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    z-index: 5; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.boton-subir:hover {
+    background-color: #dddddd;
+}
+/* Estilos para el pie de página (footer) */
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px 0; 
+    width: 100%; 
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
+    border-top: 3px solid #bb00ff; 
+}
+
+/* Estilos para el texto de derechos de autor */
+.footer p {
+    margin: 0; 
+    line-height: 1.5; 
+}
+
+/* Opcional: Efecto al pasar el ratón (hover) sobre el texto */
+.footer p:hover {
+    color: #f2f2f2; 
+    transition: color 0.3s ease; 
+}
