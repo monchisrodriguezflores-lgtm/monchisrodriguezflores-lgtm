@@ -6,7 +6,24 @@ body, html {
   height: 100%;
   scroll-behavior: smooth; /* Para un salto de sección suave */
 }
+img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción */
+}
+/* Estilos por defecto para móviles (menos de 600px) */
+.columna {
+    width: 100%; /* Ocupa todo el ancho en móvil */
+    float: none; /* Evita flotar elementos */
+}
 
+/* Estilos para pantallas de tabletas y escritorios (desde 600px) */
+@media screen and (min-width: 600px) {
+    .columna {
+        width: 50%; /* Dos columnas en pantallas más grandes */
+        float: left; 
+    }
+    /* ... otros cambios de estilo para pantallas grandes ... */
+}
 /* --- ESTILOS DE LA PORTADA --- */
 .portada {
   /* Imagen de fondo */
